@@ -1,0 +1,15 @@
+{
+    "name": "chrome-flags-automation",
+    "version": "1.0.0",
+    "description": "A project to automate the process of launching Chrome Canary, opening the 'chrome://flags' page, and saving the HTML to an existing HTML file.",
+    "author": "max-ostapenko",
+    "license": "MIT",
+    "scripts": {
+        "start": "bash run.sh"
+    },
+    "dependencies": {
+        "html-format": "^1.1.2",
+        "prettier": "^3.1.1",
+        "puppeteer": "^21.6.1"
+    }
+}
