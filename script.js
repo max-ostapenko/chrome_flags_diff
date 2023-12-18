@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
+const prettier = require("prettier");
 
 async function main() {
   // Launch Chrome Canary.
@@ -11,20 +12,23 @@ async function main() {
 
   // Open the 'chrome://flags' page.
   const page = await browser.newPage();
-
   await page.goto("chrome://flags");
 
   // Select the element using document.querySelector("body > flags-app").shadowRoot.querySelector("#flagsTemplate")
-  // and save the HTML to a file.
   const flagsTemplate = await page.evaluate(() => {
-    const flagsApp = document.querySelector('body > flags-app');
-    const flagsTemplate = flagsApp.shadowRoot.querySelector('#flagsTemplate');
+    const flagsApp = document.querySelector("body > flags-app");
+    const flagsTemplate = flagsApp.shadowRoot.querySelector("#flagsTemplate");
 
     return flagsTemplate.innerHTML;
   });
 
-
-  fs.writeFileSync("flags.html", flagsTemplate);
+  // Format the HTML using Prettier and save it to a file.
+  const formattedFlags = await prettier.format(flagsTemplate, {
+    parser: "html",
+    htmlWhitespaceSensitivity: "ignore",
+    printWidth: 250,
+  });
+  fs.writeFileSync("flags.html", formattedFlags);
 
   // Close the browser.
   await browser.close();

@@ -1,14 +1,12 @@
 {
-    "name": "chrome-flags-automation",
+    "name": "chrome-flags-diff",
     "version": "1.0.0",
-    "description": "A project to automate the process of launching Chrome Canary, opening the 'chrome://flags' page, and saving the HTML to an existing HTML file.",
+    "description": "Highlight differences in Chrome flag experiments between different versions of Chrome",
     "author": "max-ostapenko",
-    "license": "MIT",
     "scripts": {
-        "start": "bash run.sh"
+        "start": "node script.js"
     },
     "dependencies": {
-        "html-format": "^1.1.2",
         "prettier": "^3.1.1",
         "puppeteer": "^21.6.1"
     }
