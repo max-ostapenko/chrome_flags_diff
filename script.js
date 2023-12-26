@@ -7,7 +7,7 @@ async function main() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary",
-    headless: false,
+    headless: "new",
   });
 
   // Open the 'chrome://flags' page.
@@ -28,7 +28,7 @@ async function main() {
     htmlWhitespaceSensitivity: "ignore",
     printWidth: 250,
   });
-  fs.writeFileSync("flags.html", formattedFlags);
+  fs.writeFileSync(__dirname + "/flags.html", formattedFlags);
 
   // Close the browser.
   await browser.close();
