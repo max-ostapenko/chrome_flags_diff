@@ -3,7 +3,7 @@ const fs = require("fs");
 const prettier = require("prettier");
 
 async function main() {
-  // Launch Chrome Canary.
+  // Launch Chrome.
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary",
