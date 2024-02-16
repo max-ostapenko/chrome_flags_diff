@@ -2,7 +2,7 @@
   <div class="flex">
     <h1 class="section-header-title">Experiments</h1>
   </div>
-  <span id="version" class="flex">123.0.6294.0</span>
+  <span id="version" class="flex">123.0.6304.0</span>
 </div>
 <div class="blurb-container">
   <span class="blurb-warning">Warning: Experimental features ahead!</span>
@@ -80,6 +80,7 @@
       <flags-experiment id="user-education-experience-v2"></flags-experiment>
       <flags-experiment id="enable-isolated-web-apps"></flags-experiment>
       <flags-experiment id="enable-isolated-web-app-dev-mode"></flags-experiment>
+      <flags-experiment id="enable-controlled-frame"></flags-experiment>
       <flags-experiment id="isolate-origins"></flags-experiment>
       <flags-experiment id="site-isolation-trial-opt-out"></flags-experiment>
       <flags-experiment id="allow-insecure-localhost"></flags-experiment>
@@ -91,6 +92,7 @@
       <flags-experiment id="enable-desktop-pwas-tab-strip-customizations"></flags-experiment>
       <flags-experiment id="enable-desktop-pwas-sub-apps"></flags-experiment>
       <flags-experiment id="enable-desktop-pwas-scope-extensions"></flags-experiment>
+      <flags-experiment id="enable-desktop-pwas-borderless"></flags-experiment>
       <flags-experiment id="enable-desktop-pwas-additional-windowing-controls"></flags-experiment>
       <flags-experiment id="record-web-app-debug-info"></flags-experiment>
       <flags-experiment id="web-app-separate-user-display-mode-for-cros"></flags-experiment>
@@ -160,6 +162,7 @@
       <flags-experiment id="omnibox-ml-url-search-blending"></flags-experiment>
       <flags-experiment id="omnibox-ml-url-scoring-model"></flags-experiment>
       <flags-experiment id="omnibox-limit-keyword-mode-suggestions"></flags-experiment>
+      <flags-experiment id="omnibox-starter-pack-expansion"></flags-experiment>
       <flags-experiment id="omnibox-on-device-tail-suggestions"></flags-experiment>
       <flags-experiment id="force-color-profile"></flags-experiment>
       <flags-experiment id="forced-colors"></flags-experiment>
@@ -219,6 +222,7 @@
       <flags-experiment id="ntp-reduced-logo-space"></flags-experiment>
       <flags-experiment id="ntp-single-row-shortcuts"></flags-experiment>
       <flags-experiment id="ntp-modules-redesigned"></flags-experiment>
+      <flags-experiment id="ntp-realbox-contextual-and-trending-suggestions"></flags-experiment>
       <flags-experiment id="ntp-realbox-is-tall"></flags-experiment>
       <flags-experiment id="ntp-realbox-cr23-all"></flags-experiment>
       <flags-experiment id="ntp-realbox-cr23-consistent-row-height"></flags-experiment>
@@ -230,6 +234,7 @@
       <flags-experiment id="ntp-realbox-use-google-g-icon"></flags-experiment>
       <flags-experiment id="ntp-realbox-width-behavior"></flags-experiment>
       <flags-experiment id="ntp-tab-resumption-module"></flags-experiment>
+      <flags-experiment id="ntp-wallpaper-search-button"></flags-experiment>
       <flags-experiment id="chrome-wide-echo-cancellation"></flags-experiment>
       <flags-experiment id="enable-parallel-downloading"></flags-experiment>
       <flags-experiment id="tab-hover-card-images"></flags-experiment>
@@ -295,7 +300,6 @@
       <flags-experiment id="automatic-fullscreen-content-setting"></flags-experiment>
       <flags-experiment id="disruptive-notification-permission-revocation"></flags-experiment>
       <flags-experiment id="cookie-settings-ui-alignment"></flags-experiment>
-      <flags-experiment id="ip-protection-v1"></flags-experiment>
       <flags-experiment id="tracking-protection-3pcd"></flags-experiment>
       <flags-experiment id="tracking-protection-onboarding-rollback-flow"></flags-experiment>
       <flags-experiment id="enable-experimental-cookie-features"></flags-experiment>
@@ -321,6 +325,8 @@
       <flags-experiment id="chrome-labs"></flags-experiment>
       <flags-experiment id="chrome-refresh-2023"></flags-experiment>
       <flags-experiment id="chrome-webui-refresh-2023"></flags-experiment>
+      <flags-experiment id="chrome-refresh-2023-ntb"></flags-experiment>
+      <flags-experiment id="chrome-refresh-2023-top-chrome-font"></flags-experiment>
       <flags-experiment id="pdf-ocr"></flags-experiment>
       <flags-experiment id="pdf-xfa-forms"></flags-experiment>
       <flags-experiment id="enable-system-entropy"></flags-experiment>
@@ -410,7 +416,6 @@
       <flags-experiment id="background-resource-fetch"></flags-experiment>
       <flags-experiment id="skip-service-worker-fetch-handler"></flags-experiment>
       <flags-experiment id="memory-saver-multi-state-mode"></flags-experiment>
-      <flags-experiment id="memory-saver-discarded-tab-treatment"></flags-experiment>
       <flags-experiment id="memory-saver-memory-usage-in-hovercards"></flags-experiment>
       <flags-experiment id="memory-saver-discard-exceptions-improvements"></flags-experiment>
       <flags-experiment id="memory-saver-savings-reporting-improvements"></flags-experiment>
@@ -484,6 +489,7 @@
       <flags-experiment id="cdm-storage-database-migration"></flags-experiment>
       <flags-experiment id="observable-api"></flags-experiment>
       <flags-experiment id="CCO"></flags-experiment>
+      <flags-experiment id="compose-text-selection"></flags-experiment>
       <flags-experiment id="related-website-sets-permission-grants"></flags-experiment>
       <flags-experiment id="password-parsing-on-save-uses-predictions"></flags-experiment>
       <flags-experiment id="sync-session-on-visibility-changed"></flags-experiment>
@@ -518,7 +524,6 @@
       <flags-experiment unsupported="" id="enable-vulkan"></flags-experiment>
       <flags-experiment unsupported="" id="default-angle-vulkan"></flags-experiment>
       <flags-experiment unsupported="" id="vulkan-from-angle"></flags-experiment>
-      <flags-experiment unsupported="" id="enable-desktop-pwas-borderless"></flags-experiment>
       <flags-experiment unsupported="" id="downloads-migrate-to-jobs-api"></flags-experiment>
       <flags-experiment unsupported="" id="download-notification-service-unified-api"></flags-experiment>
       <flags-experiment unsupported="" id="enable-global-vaapi-lock"></flags-experiment>
