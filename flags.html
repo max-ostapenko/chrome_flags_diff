@@ -2,7 +2,7 @@
   <div class="flex">
     <h1 class="section-header-title">Experiments</h1>
   </div>
-  <span id="version" class="flex">124.0.6315.0</span>
+  <span id="version" class="flex">124.0.6327.1</span>
 </div>
 <div class="blurb-container">
   <span class="blurb-warning">Warning: Experimental features ahead!</span>
@@ -41,6 +41,7 @@
       <flags-experiment id="enable-webrtc-allow-input-volume-adjustment"></flags-experiment>
       <flags-experiment id="enable-webrtc-apm-downmix-capture-audio-method"></flags-experiment>
       <flags-experiment id="enable-webrtc-hide-local-ips-with-mdns"></flags-experiment>
+      <flags-experiment id="web-hid-in-web-view"></flags-experiment>
       <flags-experiment id="extensions-on-chrome-urls"></flags-experiment>
       <flags-experiment id="show-autofill-type-predictions"></flags-experiment>
       <flags-experiment id="autofill-undo"></flags-experiment>
@@ -195,6 +196,8 @@
       <flags-experiment id="private-network-access-respect-preflight-results"></flags-experiment>
       <flags-experiment id="private-network-access-preflight-short-timeout"></flags-experiment>
       <flags-experiment id="private-network-access-permission-prompt"></flags-experiment>
+      <flags-experiment id="private-network-access-ignore-worker-errors"></flags-experiment>
+      <flags-experiment id="private-network-access-ignore-navigation-errors"></flags-experiment>
       <flags-experiment id="tab-groups-save"></flags-experiment>
       <flags-experiment id="scrollable-tabstrip"></flags-experiment>
       <flags-experiment id="tab-scrolling-button-position"></flags-experiment>
@@ -338,7 +341,6 @@
       <flags-experiment id="fedcm-without-third-party-cookies"></flags-experiment>
       <flags-experiment id="fedcm-without-well-known-enforcement"></flags-experiment>
       <flags-experiment id="sanitizer-api"></flags-experiment>
-      <flags-experiment id="autofill-show-autocomplete-delete-button"></flags-experiment>
       <flags-experiment id="enable-lens-standalone"></flags-experiment>
       <flags-experiment id="csc-companion-enable-page-content"></flags-experiment>
       <flags-experiment id="enable-lens-region-search-static-page"></flags-experiment>
@@ -371,6 +373,7 @@
       <flags-experiment id="customize-chrome-color-extraction"></flags-experiment>
       <flags-experiment id="customize-chrome-side-panel-extensions-card"></flags-experiment>
       <flags-experiment id="customize-chrome-wallpaper-search"></flags-experiment>
+      <flags-experiment id="customize-chrome-wallpaper-search-button"></flags-experiment>
       <flags-experiment id="customize-chrome-wallpaper-search-inspiration-card"></flags-experiment>
       <flags-experiment id="wallpaper-search-settings-visibility"></flags-experiment>
       <flags-experiment id="media-session-enter-picture-in-picture"></flags-experiment>
@@ -392,7 +395,7 @@
       <flags-experiment id="safety-check-notification-permissions"></flags-experiment>
       <flags-experiment id="safety-check-unused-site-permissions"></flags-experiment>
       <flags-experiment id="safety-hub"></flags-experiment>
-      <flags-experiment id="swap-backquote-keys-in-iso-keyboard"></flags-experiment>
+      <flags-experiment id="system-color-chooser"></flags-experiment>
       <flags-experiment id="ignore-sync-encryption-keys-long-missing"></flags-experiment>
       <flags-experiment id="css-gamut-mapping"></flags-experiment>
       <flags-experiment id="clipboard-unsanitized-content"></flags-experiment>
@@ -427,7 +430,6 @@
       <flags-experiment id="enable-compute-pressure-break-calibration-mitigation"></flags-experiment>
       <flags-experiment id="enable-zstd-content-encoding"></flags-experiment>
       <flags-experiment id="enable-shared-zstd"></flags-experiment>
-      <flags-experiment id="permission-storage-access-api"></flags-experiment>
       <flags-experiment id="cast-mirroring-target-playout-delay"></flags-experiment>
       <flags-experiment id="enable-policy-test-page"></flags-experiment>
       <flags-experiment id="use-gpu-scheduler-dfs"></flags-experiment>
@@ -492,20 +494,23 @@
       <flags-experiment id="autofill-enable-vcn-3ds-authentication"></flags-experiment>
       <flags-experiment id="minor-mode-restrictions-for-history-sync-opt-in"></flags-experiment>
       <flags-experiment id="autofill-shared-storage-server-card-data"></flags-experiment>
+      <flags-experiment id="autofill-enable-card-benefits-for-american-express"></flags-experiment>
+      <flags-experiment id="autofill-enable-card-benefits-for-capital-one"></flags-experiment>
     </div>
     <div class="no-match hidden" role="alert">No matching experiments</div>
   </div>
 
   <div id="tab-content-unavailable" class="tab-content" role="tabpanel" aria-labelledby="tab-unavailable" aria-hidden="false">
     <div id="unavailable-experiments">
-      <flags-experiment unsupported="" id="disable-webrtc-hw-decoding"></flags-experiment>
-      <flags-experiment unsupported="" id="disable-webrtc-hw-encoding"></flags-experiment>
+      <flags-experiment unsupported="" id="webrtc-hw-decoding"></flags-experiment>
+      <flags-experiment unsupported="" id="webrtc-hw-encoding"></flags-experiment>
       <flags-experiment unsupported="" id="smooth-scrolling"></flags-experiment>
       <flags-experiment unsupported="" id="enable-web-bluetooth"></flags-experiment>
       <flags-experiment unsupported="" id="enable-touch-drag-drop"></flags-experiment>
       <flags-experiment unsupported="" id="enable-vulkan"></flags-experiment>
       <flags-experiment unsupported="" id="default-angle-vulkan"></flags-experiment>
       <flags-experiment unsupported="" id="vulkan-from-angle"></flags-experiment>
+      <flags-experiment unsupported="" id="dcheck-is-fatal"></flags-experiment>
       <flags-experiment unsupported="" id="downloads-migrate-to-jobs-api"></flags-experiment>
       <flags-experiment unsupported="" id="download-notification-service-unified-api"></flags-experiment>
       <flags-experiment unsupported="" id="enable-global-vaapi-lock"></flags-experiment>
