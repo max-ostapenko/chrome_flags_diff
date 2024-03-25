@@ -2,7 +2,7 @@
   <div class="flex">
     <h1 class="section-header-title">Experiments</h1>
   </div>
-  <span id="version" class="flex">124.0.6358.0</span>
+  <span id="version" class="flex">125.0.6378.0</span>
 </div>
 <div class="blurb-container">
   <span class="blurb-warning">Warning: Experimental features ahead!</span>
@@ -29,8 +29,8 @@
     <div id="non-default-experiments"></div>
 
     <div id="default-experiments">
-      <flags-experiment id="temporary-unexpire-flags-m122"></flags-experiment>
       <flags-experiment id="temporary-unexpire-flags-m123"></flags-experiment>
+      <flags-experiment id="temporary-unexpire-flags-m124"></flags-experiment>
       <flags-experiment id="enable-benchmarking"></flags-experiment>
       <flags-experiment id="ignore-gpu-blocklist"></flags-experiment>
       <flags-experiment id="disable-accelerated-2d-canvas"></flags-experiment>
@@ -44,7 +44,6 @@
       <flags-experiment id="web-hid-in-web-view"></flags-experiment>
       <flags-experiment id="extensions-on-chrome-urls"></flags-experiment>
       <flags-experiment id="show-autofill-type-predictions"></flags-experiment>
-      <flags-experiment id="autofill-undo"></flags-experiment>
       <flags-experiment id="enable-quic"></flags-experiment>
       <flags-experiment id="webtransport-developer-mode"></flags-experiment>
       <flags-experiment id="disable-javascript-harmony-shipping"></flags-experiment>
@@ -106,7 +105,6 @@
       <flags-experiment id="media-remoting-without-fullscreen"></flags-experiment>
       <flags-experiment id="remote-playback-backend"></flags-experiment>
       <flags-experiment id="allow-all-sites-to-initiate-mirroring"></flags-experiment>
-      <flags-experiment id="media-route-dial-provider"></flags-experiment>
       <flags-experiment id="cast-streaming-hardware-h264"></flags-experiment>
       <flags-experiment id="cast-streaming-hardware-vp8"></flags-experiment>
       <flags-experiment id="cast-streaming-performance-overlay"></flags-experiment>
@@ -120,8 +118,6 @@
       <flags-experiment id="mac-loopback-audio-for-cast"></flags-experiment>
       <flags-experiment id="mac-loopback-audio-for-screen-share"></flags-experiment>
       <flags-experiment id="web-share"></flags-experiment>
-      <flags-experiment id="skip-undecryptable-passwords"></flags-experiment>
-      <flags-experiment id="force-password-initial-sync-when-decryption-fails"></flags-experiment>
       <flags-experiment id="system-keyboard-lock"></flags-experiment>
       <flags-experiment id="disallow-doc-written-script-loads"></flags-experiment>
       <flags-experiment id="view-transition-on-navigation"></flags-experiment>
@@ -130,6 +126,7 @@
       <flags-experiment id="force-text-direction"></flags-experiment>
       <flags-experiment id="enable-tls13-early-data"></flags-experiment>
       <flags-experiment id="enable-tls13-kyber"></flags-experiment>
+      <flags-experiment id="enable-force-dark"></flags-experiment>
       <flags-experiment id="enable-experimental-accessibility-language-detection"></flags-experiment>
       <flags-experiment id="enable-experimental-accessibility-language-detection-dynamic"></flags-experiment>
       <flags-experiment id="enable-cros-touch-text-editing-redesign"></flags-experiment>
@@ -205,7 +202,6 @@
       <flags-experiment id="scrollable-tabstrip-overflow"></flags-experiment>
       <flags-experiment id="side-panel-pinning"></flags-experiment>
       <flags-experiment id="product-specifications"></flags-experiment>
-      <flags-experiment id="local-pdp-detection"></flags-experiment>
       <flags-experiment id="parcel-tracking-test-data"></flags-experiment>
       <flags-experiment id="shopping-icon-color-variant"></flags-experiment>
       <flags-experiment id="price-tracking-icon-colors"></flags-experiment>
@@ -238,7 +234,6 @@
       <flags-experiment id="tab-hover-card-images"></flags-experiment>
       <flags-experiment id="enable-network-logging-to-file"></flags-experiment>
       <flags-experiment id="sync-webauthn-credentials"></flags-experiment>
-      <flags-experiment id="web-authentication-new-passkey-ui"></flags-experiment>
       <flags-experiment id="web-authentication-permit-enterprise-attestation"></flags-experiment>
       <flags-experiment id="legacy-tech-report-enable-cookie-issue-reports"></flags-experiment>
       <flags-experiment id="zero-copy-tab-capture"></flags-experiment>
@@ -269,6 +264,7 @@
       <flags-experiment id="enable-gamepad-trigger-rumble"></flags-experiment>
       <flags-experiment id="sharing-desktop-screenshots"></flags-experiment>
       <flags-experiment id="enable-gpu-service-logging"></flags-experiment>
+      <flags-experiment id="hardware-media-key-handling"></flags-experiment>
       <flags-experiment id="avif-gainmap-hdr-images"></flags-experiment>
       <flags-experiment id="file-system-access-persistent-permission"></flags-experiment>
       <flags-experiment id="file-system-access-persistent-permission-updated-page-info"></flags-experiment>
@@ -296,7 +292,6 @@
       <flags-experiment id="fullscreen-popup-windows"></flags-experiment>
       <flags-experiment id="automatic-fullscreen-content-setting"></flags-experiment>
       <flags-experiment id="disruptive-notification-permission-revocation"></flags-experiment>
-      <flags-experiment id="cookie-settings-ui-alignment"></flags-experiment>
       <flags-experiment id="tracking-protection-3pcd"></flags-experiment>
       <flags-experiment id="tracking-protection-onboarding-rollback-flow"></flags-experiment>
       <flags-experiment id="enable-experimental-cookie-features"></flags-experiment>
@@ -312,10 +307,9 @@
       <flags-experiment id="responsive-toolbar"></flags-experiment>
       <flags-experiment id="enable-oop-print-drivers"></flags-experiment>
       <flags-experiment id="privacy-sandbox-ads-apis"></flags-experiment>
+      <flags-experiment id="privacy-sandbox-ads-notice-ui"></flags-experiment>
       <flags-experiment id="privacy-sandbox-internals"></flags-experiment>
       <flags-experiment id="privacy-sandbox-proactive-topics-blocking"></flags-experiment>
-      <flags-experiment id="enable-friendlier-safe-browsing-settings-enhanced-protection"></flags-experiment>
-      <flags-experiment id="enable-friendlier-safe-browsing-settings-standard-protection"></flags-experiment>
       <flags-experiment id="enable-suspicious-site-detection-rt-lookups"></flags-experiment>
       <flags-experiment id="show-performance-metrics-hud"></flags-experiment>
       <flags-experiment id="enable-speculation-rules-prerendering-target-hint"></flags-experiment>
@@ -331,24 +325,16 @@
       <flags-experiment id="sync-poll-immediately-on-every-startup"></flags-experiment>
       <flags-experiment id="filling-across-grouped-sites"></flags-experiment>
       <flags-experiment id="fedcm-authz"></flags-experiment>
-      <flags-experiment id="fedcm-auto-selected-flag"></flags-experiment>
       <flags-experiment id="fedcm-button-mode"></flags-experiment>
-      <flags-experiment id="fedcm-disconnect"></flags-experiment>
-      <flags-experiment id="fedcm-domain-hint"></flags-experiment>
-      <flags-experiment id="fedcm-error"></flags-experiment>
-      <flags-experiment id="fedcm-exempt-idp-with-third-party-cookies"></flags-experiment>
       <flags-experiment id="fedcm-idp-registration"></flags-experiment>
-      <flags-experiment id="fedcm-idp-signin-status-api"></flags-experiment>
       <flags-experiment id="fedcm-metrics-endpoint"></flags-experiment>
       <flags-experiment id="fedcm-multi-idp"></flags-experiment>
       <flags-experiment id="fedcm-selective-disclosure"></flags-experiment>
-      <flags-experiment id="fedcm-skip-well-known-for-same-site"></flags-experiment>
       <flags-experiment id="fedcm-use-other-account"></flags-experiment>
-      <flags-experiment id="fedcm-without-third-party-cookies"></flags-experiment>
+      <flags-experiment id="fedcm-with-storage-access-api"></flags-experiment>
       <flags-experiment id="fedcm-without-well-known-enforcement"></flags-experiment>
       <flags-experiment id="sanitizer-api"></flags-experiment>
       <flags-experiment id="autofill-enable-manual-fallback-iph"></flags-experiment>
-      <flags-experiment id="enable-lens-standalone"></flags-experiment>
       <flags-experiment id="csc-companion-enable-page-content"></flags-experiment>
       <flags-experiment id="enable-lens-region-search-static-page"></flags-experiment>
       <flags-experiment id="enable-new-base-url-inheritance-behavior"></flags-experiment>
@@ -374,8 +360,6 @@
       <flags-experiment id="captured-surface-control"></flags-experiment>
       <flags-experiment id="skia-graphite"></flags-experiment>
       <flags-experiment id="enable-tab-audio-muting"></flags-experiment>
-      <flags-experiment id="customize-chrome-side-panel"></flags-experiment>
-      <flags-experiment id="customize-chrome-color-extraction"></flags-experiment>
       <flags-experiment id="customize-chrome-side-panel-extensions-card"></flags-experiment>
       <flags-experiment id="customize-chrome-wallpaper-search"></flags-experiment>
       <flags-experiment id="customize-chrome-wallpaper-search-button"></flags-experiment>
@@ -387,12 +371,12 @@
       <flags-experiment id="layout-extraction"></flags-experiment>
       <flags-experiment id="origin-agent-cluster-default"></flags-experiment>
       <flags-experiment id="origin-keyed-processes-by-default"></flags-experiment>
-      <flags-experiment id="edit-context"></flags-experiment>
       <flags-experiment id="enable-isolated-sandboxed-iframes"></flags-experiment>
       <flags-experiment id="download-warning-improvements"></flags-experiment>
       <flags-experiment id="reduce-accept-language"></flags-experiment>
       <flags-experiment id="reduce-transfer-size-updated-ipc"></flags-experiment>
       <flags-experiment id="omit-cors-client-cert"></flags-experiment>
+      <flags-experiment id="autofill-enable-virtual-card-metadata"></flags-experiment>
       <flags-experiment id="autofill-enable-ranking-formula-address-profiles"></flags-experiment>
       <flags-experiment id="autofill-enable-ranking-formula-credit-cards"></flags-experiment>
       <flags-experiment id="safe-browsing-async-real-time-check"></flags-experiment>
@@ -400,10 +384,7 @@
       <flags-experiment id="safety-check-unused-site-permissions"></flags-experiment>
       <flags-experiment id="safety-hub"></flags-experiment>
       <flags-experiment id="system-color-chooser"></flags-experiment>
-      <flags-experiment id="ignore-sync-encryption-keys-long-missing"></flags-experiment>
       <flags-experiment id="css-gamut-mapping"></flags-experiment>
-      <flags-experiment id="clipboard-unsanitized-content"></flags-experiment>
-      <flags-experiment id="clipboard-well-formed-html-sanitization-write"></flags-experiment>
       <flags-experiment id="autofill-parse-vcn-card-on-file-standalone-cvc-fields"></flags-experiment>
       <flags-experiment id="background-resource-fetch"></flags-experiment>
       <flags-experiment id="memory-saver-multi-state-mode"></flags-experiment>
@@ -423,6 +404,7 @@
       <flags-experiment id="power-bookmark-backend"></flags-experiment>
       <flags-experiment id="enable-preferences-account-storage"></flags-experiment>
       <flags-experiment id="settings-enable-get-the-most-out-of-chrome"></flags-experiment>
+      <flags-experiment id="ios-promo-bookmark-bubble"></flags-experiment>
       <flags-experiment id="enable-file-backed-blob-factory"></flags-experiment>
       <flags-experiment id="autofill-enable-payments-mandatory-reauth"></flags-experiment>
       <flags-experiment id="enable-compression-dictionary-transport"></flags-experiment>
@@ -524,6 +506,7 @@
       <flags-experiment unsupported="" id="vulkan-from-angle"></flags-experiment>
       <flags-experiment unsupported="" id="downloads-migrate-to-jobs-api"></flags-experiment>
       <flags-experiment unsupported="" id="download-notification-service-unified-api"></flags-experiment>
+      <flags-experiment unsupported="" id="enable-gamepad-multitouch"></flags-experiment>
       <flags-experiment unsupported="" id="enable-global-vaapi-lock"></flags-experiment>
       <flags-experiment unsupported="" id="web-identity-digital-credentials"></flags-experiment>
       <flags-experiment unsupported="" id="enable-perfetto-system-tracing"></flags-experiment>
