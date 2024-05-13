@@ -2,7 +2,7 @@
   <div class="flex">
     <h1 class="section-header-title">Experiments</h1>
   </div>
-  <span id="version" class="flex">126.0.6458.0</span>
+  <span id="version" class="flex">126.0.6475.0</span>
 </div>
 <div class="blurb-container">
   <span class="blurb-warning">Warning: Experimental features ahead!</span>
@@ -91,8 +91,6 @@
       <flags-experiment id="enable-desktop-pwas-borderless"></flags-experiment>
       <flags-experiment id="enable-desktop-pwas-additional-windowing-controls"></flags-experiment>
       <flags-experiment id="record-web-app-debug-info"></flags-experiment>
-      <flags-experiment id="web-app-separate-user-display-mode-for-cros"></flags-experiment>
-      <flags-experiment id="web-app-sync-only-separate-user-display-mode-for-cros"></flags-experiment>
       <flags-experiment id="web-app-sync-generated-icon-background-fix"></flags-experiment>
       <flags-experiment id="web-app-sync-generated-icon-retroactive-fix"></flags-experiment>
       <flags-experiment id="web-app-sync-generated-icon-update-fix"></flags-experiment>
@@ -120,6 +118,7 @@
       <flags-experiment id="system-keyboard-lock"></flags-experiment>
       <flags-experiment id="disallow-doc-written-script-loads"></flags-experiment>
       <flags-experiment id="view-transition-on-navigation"></flags-experiment>
+      <flags-experiment id="view-transition-on-navigation-iframe"></flags-experiment>
       <flags-experiment id="enable-autofill-credit-card-upload"></flags-experiment>
       <flags-experiment id="force-ui-direction"></flags-experiment>
       <flags-experiment id="force-text-direction"></flags-experiment>
@@ -135,6 +134,7 @@
       <flags-experiment id="enable-debug-for-secure-payment-confirmation"></flags-experiment>
       <flags-experiment id="enable-network-and-issuer-icons-for-secure-payment-confirmation"></flags-experiment>
       <flags-experiment id="mutation-events"></flags-experiment>
+      <flags-experiment id="keyboard-focusable-scrollers"></flags-experiment>
       <flags-experiment id="fill-on-account-select"></flags-experiment>
       <flags-experiment id="enable-generic-sensor-extra-classes"></flags-experiment>
       <flags-experiment id="omnibox-local-history-zero-suggest-beyond-ntp"></flags-experiment>
@@ -313,6 +313,7 @@
       <flags-experiment id="sanitizer-api"></flags-experiment>
       <flags-experiment id="autofill-enable-manual-fallback-iph"></flags-experiment>
       <flags-experiment id="enable-lens-region-search-static-page"></flags-experiment>
+      <flags-experiment id="use-screen2x-v2"></flags-experiment>
       <flags-experiment id="password-generation-experiment"></flags-experiment>
       <flags-experiment id="cbd-timeframe-required"></flags-experiment>
       <flags-experiment id="policy-indication-for-managed-default-search"></flags-experiment>
@@ -356,6 +357,7 @@
       <flags-experiment id="safe-browsing-hash-prefix"></flags-experiment>
       <flags-experiment id="safety-check-unused-site-permissions"></flags-experiment>
       <flags-experiment id="safety-hub"></flags-experiment>
+      <flags-experiment id="safety-hub-abusive-notification-revocation"></flags-experiment>
       <flags-experiment id="system-color-chooser"></flags-experiment>
       <flags-experiment id="css-gamut-mapping"></flags-experiment>
       <flags-experiment id="autofill-parse-vcn-card-on-file-standalone-cvc-fields"></flags-experiment>
@@ -367,6 +369,7 @@
       <flags-experiment id="ui-enable-shared-image-cache-for-gpu"></flags-experiment>
       <flags-experiment id="use-multi-plane-format-for-hardware-video"></flags-experiment>
       <flags-experiment id="use-multi-plane-format-for-software-video"></flags-experiment>
+      <flags-experiment id="use-write-pixels-yuv"></flags-experiment>
       <flags-experiment id="enable-automatic-shared-image-management"></flags-experiment>
       <flags-experiment id="autofill-enable-new-card-art-and-network-images"></flags-experiment>
       <flags-experiment id="enable-preferences-account-storage"></flags-experiment>
@@ -405,10 +408,12 @@
       <flags-experiment id="third-party-profile-management"></flags-experiment>
       <flags-experiment id="explicit-browser-signin-ui-on-desktop"></flags-experiment>
       <flags-experiment id="enable-user-link-capturing-pwa"></flags-experiment>
+      <flags-experiment id="enable-user-link-capturing-scope-extensions-pwa"></flags-experiment>
       <flags-experiment id="ip-protection-proxy-opt-out"></flags-experiment>
       <flags-experiment id="protected-audience-debug-token"></flags-experiment>
       <flags-experiment id="deprecate-unload"></flags-experiment>
       <flags-experiment id="autofill-enable-fpan-risk-based-authentication"></flags-experiment>
+      <flags-experiment id="draw-immediately-when-interactive"></flags-experiment>
       <flags-experiment id="enable-mac-pwas-notification-attribution"></flags-experiment>
       <flags-experiment id="use-adhoc-signing-for-web-app-shims"></flags-experiment>
       <flags-experiment id="indexed-db-shard-backing-stores"></flags-experiment>
@@ -460,6 +465,8 @@
       <flags-experiment id="autofill-enable-verve-card-support"></flags-experiment>
       <flags-experiment id="cert-management-v2-ui"></flags-experiment>
       <flags-experiment id="pwm-show-webauthn-suggestions-on-autofocus"></flags-experiment>
+      <flags-experiment id="discard-ring-improvements"></flags-experiment>
+      <flags-experiment id="memory-saver-aggressiveness"></flags-experiment>
     </div>
     <div class="no-match hidden" role="alert">No matching experiments</div>
   </div>
